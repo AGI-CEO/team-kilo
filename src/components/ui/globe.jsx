@@ -1,13 +1,10 @@
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
+import ThreeGlobe from "three-globe";
 import { useThree, Object3DNode, Canvas, extend } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import countries from "@/data/globe.json";
-import dynamic from "next/dynamic";
-const ThreeGlobe = dynamic(
-  () => import("three-globe"),
-  { ssr: false } // This will load the component only on client side
-);
 
 extend({ ThreeGlobe });
 
@@ -168,7 +165,7 @@ function Globe(props) {
   );
 }
 
-function WebGLRendererConfig() {
+export function WebGLRendererConfig() {
   const { gl, size } = useThree();
 
   useEffect(() => {
