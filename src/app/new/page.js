@@ -1,7 +1,8 @@
 import React from "react";
+import NewProject from "@/components/newproject";
 
 const page = () => {
-  return <div>page</div>;
+  return <NewProject />;
 };
 
 export default page;
