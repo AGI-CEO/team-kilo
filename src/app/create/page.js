@@ -1,7 +1,8 @@
 import React from "react";
+import TestType from "@/components/testtype";
 
 const Create = () => {
-  return <div>Create</div>;
+  return <TestType />;
 };
 
 export default Create;
