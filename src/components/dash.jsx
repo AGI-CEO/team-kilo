@@ -74,7 +74,9 @@ export default function Dash() {
               Submit
             </Button>
           </form>
-          <Button>Add New</Button>
+          <Link href="/new">
+            <Button>Add New</Button>
+          </Link>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl w-full mx-auto">
           <Card className="animate-fade-in">
