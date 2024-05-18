@@ -1,5 +1,7 @@
 "use client";
-import World from "@/components/ui/globe";
+import dynamic from "next/dynamic";
+
+const World = dynamic(() => import("@/components/ui/globe"), { ssr: false });
 import React from "react";
 
 const Home = () => {
