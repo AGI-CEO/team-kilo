@@ -1,7 +1,8 @@
 import React from "react";
+import TestForm from "@/components/testform";
 
-const TestForm = () => {
-  return <div>TestForm</div>;
+const page = () => {
+  return <TestForm />;
 };
 
-export default TestForm;
+export default page;
