@@ -11,6 +11,7 @@ import {
   Card,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function NewProject() {
   return (
@@ -23,7 +24,9 @@ export default function NewProject() {
           </CardDescription>
         </CardHeader>
         <CardContent className="grid gap-4">
-          <Button className="w-full">Create New Project</Button>
+          <Link href="/create">
+            <Button className="w-full">Create New Project</Button>
+          </Link>
           <Button
             className="w-full opacity-50 cursor-not-allowed"
             title="(coming soon)"
