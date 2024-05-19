@@ -46,7 +46,7 @@ export default function TestType() {
         <div className="flex items-center space-x-3">
           <label className="flex items-center space-x-3">
           <input type="checkbox" name="Checkbox" value="1" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"/>
-            <span className="text-gray-700 dark:text-gray-300">Pressure Test</span>
+            <span className="text-gray-700 dark:text-gray-300">Cryo</span>
           </label> 
         </div>
         <div className="flex items-center space-x-3">
@@ -64,7 +64,7 @@ export default function TestType() {
         <div className="flex items-center space-x-3">
           <label className="flex items-center space-x-3">
           <input type="checkbox" name="Checkbox" value="1" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"/>
-            <span className="text-gray-700 dark:text-gray-300">Cryo</span>
+            <span className="text-gray-700 dark:text-gray-300">Pressure Test</span>
           </label> 
         </div>
       </div>
