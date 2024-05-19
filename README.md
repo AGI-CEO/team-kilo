@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<table>
+  <tr>
+    <td>
+<img src="public/spacify.png" width="230" height="230" alt="Spacify Logo">
+    </td>
+    <td style="padding-left: 40px;">
+<h3><strong>Welcome to the official repository for Spacify.<br><br>
+   <br><br>
+The LETF process is long and complex.
+<br><br>
+ Spacify is an LETF-compliant submission platform w/AI driven reports automation–Lowering costs and increasing efficiencies.
+ <br><br>
+ <strong></h3>
+    </td>
+  </tr>
+</table>
 
-## Getting Started
+## Features
 
-First, run the development server:
+- **Streamlined Integrations:** Spacify provides seamless integrations between LETF facilities and Test-, Project-, and Quality-Engineers at space companies and component manufacturers. This ensures smooth communication and efficient workflow.
+- **AI-Powered Quote Generation:** Our platform uses AI technology to generate quotes, saving valuable time in the quote generation process and increasing productivity.
+- **Seamless Dashboard:** Manage all your LETF test projects from a single, user-friendly dashboard. Our intuitive interface makes it easy to track and manage all your projects.
+- **Quicker to Launch:** With Spacify, get quicker to launch with less friction and more transparency. We aim to streamline the process and make it as smooth as possible for you.
+  <br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  ## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Programming Languages:**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+  - **Backend and Frontend**: Next.js (JavaScript / React)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Database:**
 
-## Learn More
+  - **PostgreSQL via Supabase**: Used for robust data storage and management solutions.
 
-To learn more about Next.js, take a look at the following resources:
+- **AI Agent Generation:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - **LangChain.js via Flowise**: Powers the generation of AI agents.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Deployment:**
 
-## Deploy on Vercel
+  - **Vercel**: We use Vercel for deployment. It provides a seamless workflow for our Next.js application, from development to production.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **CI/CD:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - **GitHub**: We use GitHub for Continuous Integration (CI) and Continuous Deployment (CD). It helps us automate our software development process, from source code management to deployment.
+
+- **Development Tools:**
+
+  - **V0.dev**: Used for frontend UI drafts.
+  - **Cursor.sh**: Serves as the Integrated Development Environment (IDE).
+  - **Devin AI**: Utilized as a draft reference.
+
+  ## Getting Started
+
+  To get this project up and running, follow these steps:
+
+  1. Clone the repository to your local machine.
+  2. Navigate to the project directory.
+  3. Run `npm install` to install all the necessary dependencies.
+  4. Run `npm run dev` to start the development environment.
+
+  Now, you should be able to start the project in your local development environment.
+
+## License
+
+Spacify is made available under the [MIT License](https://opensource.org/licenses/MIT).  
+By using, distributing, or contributing to this project, you agree to the terms and conditions of this license.
+
+## Acknowledgments
+
+- Thanks to everyone who participates in and supports the hackathon.
+- Special thanks to Jameel and the Fall In Team for hosting this event.
