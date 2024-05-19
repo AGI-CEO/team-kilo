@@ -56,7 +56,7 @@ export default function TestForm({ onSubmit, onBotResponse }) {
             What are the expected safe vibration parameters of your widget?
           </label>
           <input
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-colors duration-300"
+            className="w-full px-4 py-2 border border-gray-300 dark:text-black dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-colors duration-300"
             id="vibration"
             name="vibration" // Add this line
             placeholder="Enter vibration parameters"
@@ -71,7 +71,7 @@ export default function TestForm({ onSubmit, onBotResponse }) {
             What are the expected safe cryo parameters for your widget?
           </label>
           <input
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-colors duration-300"
+            className="w-full px-4 py-2 border dark:text-black border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-colors duration-300"
             id="cryo"
             name="cryo" // Add this line
             placeholder="Enter cryo parameters"
@@ -87,7 +87,7 @@ export default function TestForm({ onSubmit, onBotResponse }) {
             Non-Destrctive Testing(NDE)?
           </label>
           <input
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-colors duration-300"
+            className="w-full px-4 py-2 border border-gray-300 dark:text-black dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-colors duration-300"
             id="transportation"
             name="transportation" // Add this line
             placeholder="Enter NDE test parameters"
