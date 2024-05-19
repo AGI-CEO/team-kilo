@@ -3,7 +3,42 @@
  * @see https://v0.dev/t/JwJZLB5oWMc
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-export default function TestForm() {
+import React, { useEffect, useState } from "react";
+
+export default function TestForm({ onSubmit, onBotResponse }) {
+  const [botResponse, setBotResponse] = useState(null);
+
+  useEffect(() => {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch("/api/form", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+        const responseData = await response.json();
+        setBotResponse(responseData);
+        onBotResponse(responseData);
+      } catch (error) {
+        console.error(error);
+      }
+
+      onSubmit();
+    });
+
+    return () => {
+      form.removeEventListener("submit", onSubmit);
+    };
+  }, [onSubmit, onBotResponse]);
+
   return (
     <div className="w-full max-w-md mx-auto my-12">
       <form className="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-8 space-y-6">
