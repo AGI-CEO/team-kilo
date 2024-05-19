@@ -393,7 +393,7 @@ const Home = () => {
   return (
     <>
       <div className="flex flex-col absolute inset-0 mt-10 text-center items-center justify-center text-6xl ">
-        <Link href="/dashboard">
+        <Link href="/email">
           The LETF process is long, complex, and <strong>INEFFICIENT</strong>
         </Link>
         <World data={sampleArcs} globeConfig={globeConfig} />
