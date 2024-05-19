@@ -11,17 +11,12 @@ export default function TestForm({ onSubmit, onBotResponse }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log("handleSubmit called"); // Add this line
-
     const formData = new FormData(e.target);
     const formValues = Object.fromEntries(formData.entries());
-
-    console.log("formValues", formValues); // Add this line
 
     const data = {
       question: JSON.stringify(formValues),
     };
-    console.log("data", data); // Add this line
 
     try {
       const response = await fetch(
@@ -36,10 +31,10 @@ export default function TestForm({ onSubmit, onBotResponse }) {
       );
 
       const responseData = await response.json();
-      console.log(responseData);
-      setBotResponse(responseData);
+
+      setBotResponse(responseData.text); // Update this line
       if (onBotResponse) {
-        onBotResponse(responseData);
+        onBotResponse(responseData.text); // And this line
       }
       onSubmit();
     } catch (error) {
@@ -89,14 +84,13 @@ export default function TestForm({ onSubmit, onBotResponse }) {
             htmlFor="transportation"
           >
             What are the expected safe parameters of your widget for
-            transportation from the staging facility to VAB and then to launch
-            pad?
+            Non-Destrctive Testing(NDE)?
           </label>
           <input
             className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-colors duration-300"
             id="transportation"
             name="transportation" // Add this line
-            placeholder="Enter transportation parameters"
+            placeholder="Enter NDE test parameters"
             type="text"
           />
         </div>
