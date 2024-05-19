@@ -1,6 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
-
+import Link from "next/link";
 const World = dynamic(() => import("@/components/ui/globe"), { ssr: false });
 import React from "react";
 
@@ -393,7 +393,9 @@ const Home = () => {
   return (
     <>
       <div className="flex flex-col absolute inset-0 mt-10 text-center items-center justify-center text-6xl ">
-        The LETF process is long, complex, and <strong>INEFFICIENT</strong>
+        <Link href="/dashboard">
+          The LETF process is long, complex, and <strong>INEFFICIENT</strong>
+        </Link>
         <World data={sampleArcs} globeConfig={globeConfig} />
       </div>
     </>
