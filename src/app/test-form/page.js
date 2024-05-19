@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import TestForm from "@/components/testform";
+import Quote from "@/components/quote";
 
 const page = () => {
   const [isFormSubmitted, setFormSubmitted] = useState(false);
@@ -14,7 +15,11 @@ const page = () => {
     setBotResponse(response);
   };
 
-  return isFormSubmitted ? null : <TestForm onSubmit={handleFormSubmit} />;
+  return isFormSubmitted ? (
+    <Quote botResponse={botResponse} />
+  ) : (
+    <TestForm onSubmit={handleFormSubmit} onBotResponse={handleBotResponse} />
+  );
 };
 
 export default page;
