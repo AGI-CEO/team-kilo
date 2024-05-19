@@ -39,8 +39,8 @@ export default function TestType() {
         </div>
         <div className="flex items-center space-x-3">
         <label className="flex items-center space-x-3">
-          <input type="checkbox" name="Checkbox" value="1" class="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"/>
-            <span className="text-gray-700 dark:text-gray-300">Payload Transporter</span>
+          <input type="checkbox" name="Checkbox" value="1" class="w-6 h-6 text-blue-600 border-gray-300 rounded focus:ring-blue-500"/>
+            <span className="text-gray-700 dark:text-gray-300">Non-Destructive Testing</span>
           </label> 
         </div>
         <div className="flex items-center space-x-3">
