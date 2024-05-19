@@ -24,7 +24,7 @@ import { Progress } from "@/components/ui/progress";
 export default function Dash() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="flex items-center h-16 px-4 border-b shrink-0 md:px-6">
+      <header className="flex items-center h-16 px-4 bg-sky-900 border-b shrink-0 md:px-6">
         <Link
           className="flex items-center gap-2 text-lg font-semibold sm:text-base mr-4"
           href="#"
