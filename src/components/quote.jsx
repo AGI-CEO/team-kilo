@@ -11,7 +11,7 @@ export default function Quote({ botResponse }) {
   console.log("botResponse", botResponse);
   //const quote = JSON.botResponse;
   const quotePrice =
-    botResponse && botResponse.Price ? botResponse.Price : "953,153";
+    botResponse && botResponse.Price ? botResponse.Price : "486,114";
   console.log("price", quotePrice);
   const quoteJustification =
     botResponse && botResponse.PriceJustification
