@@ -392,8 +392,8 @@ const Home = () => {
   ];
   return (
     <>
-      <div className="flex flex-col absolute inset-0 mt-10  items-center justify-center text-6xl">
-        Spacify Coming Soon
+      <div className="flex flex-col absolute inset-0 mt-10 text-center items-center justify-center text-6xl ">
+        The LETF process is long, complex, and <strong>INEFFICIENT</strong>
         <World data={sampleArcs} globeConfig={globeConfig} />
       </div>
     </>
